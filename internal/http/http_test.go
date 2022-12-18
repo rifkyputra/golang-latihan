@@ -26,8 +26,6 @@ func TestGreet(t *testing.T) {
 func TestListenAndServe_Serve(t *testing.T) {
 	type fields struct {
 		port string
-		w    http.ResponseWriter
-		r    *http.Request
 	}
 	tests := []struct {
 		name   string
@@ -39,8 +37,6 @@ func TestListenAndServe_Serve(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			l := &ListenAndServe{
 				port: tt.fields.port,
-				w:    tt.fields.w,
-				r:    tt.fields.r,
 			}
 			l.Serve()
 		})

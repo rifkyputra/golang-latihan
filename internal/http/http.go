@@ -20,6 +20,4 @@ func Greet(w http.ResponseWriter, r *http.Request) {
 
 type ListenAndServe struct {
 	port string
-	w    http.ResponseWriter
-	r    *http.Request
 }
