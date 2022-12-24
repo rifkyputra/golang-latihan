@@ -14,7 +14,6 @@ func main() {
 
 	db.HandleTodo(dbConn)
 	db.CreateTodoTable(dbConn)
-	// db.InsertTodo("DR", dbConn)
 
 	serveAndLog.RunApp()
 
